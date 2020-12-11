@@ -48,7 +48,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="https://tranducanhtu.github.io/">Về Chúng Tôi</a></li>
+          <li><a href="index.html">Về Chúng Tôi</a></li>
           <li><a href="#portfolio">Khoá Học</a></li>
 		  <li><a href="index.html">Giang viên</a></li>
           <li class="menu-has-children"><a href="">Khoá học chính</a>
@@ -99,10 +99,29 @@
           </div>
         </div>
       </div>
-      <nav class="nav social-nav pull-right d-none d-lg-inline">
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      <div class="boxex">
+        <button type="submit"onclick="openNav4()"> <i class="fa fa-search"></i></button>
+        <div class="example">
+          <div id="myNav4" class="overlay4">
+            <div class="overlay4-content">
+              <a href="javascript:void(0)" class="closebtn4" onclick="closeNav4()">&times;</a>
+              <input id="sre" type="text" placeholder="Search.." name="search2">
+            </div>
+          </div>
+
+        </div>
+
+   </div>
+   <nav class="nav social-nav pull-right d-none d-lg-inline" style="position: absolute;right:10px">
+    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
       </nav>
+      
     </div>
+    <label class="switch" style="position: relative;left:333px ;">
+      <input type="checkbox" onclick="turnon()">
+      <span class="slider"></span>
+    </label>
+    
   </header>
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -211,7 +230,7 @@
            </div>
       <div class="scrolldk" id="title3">
           <div class="txl3">
-          <a href="https://tranducanhtu.github.io/" style="color:white">Trang chủ</a>
+          <a href="index.html" style="color:white">Trang chủ</a>
           </div>
            </div>
       </div>
@@ -241,6 +260,7 @@
                         Khóa học luyện Tiếng Anh dành cho những người mong muốn nâng cao trình độ Tiếng Anh cấp tốc. Với lộ trình giảng dạy vượt trội, tăng
                         cường những lớp học ngoài giờ để thực hành và luyện phản xạ.
                                          </p>
+                                         <button type="submit" onclick="openNav2()"style="background-color:rgb(0,183,70)"><p style="color:rgb(255, 255, 255);  font-family: Arial, Helvetica, sans-serif;padding:3px;margin: 0;">Đăng ký ngay</p></button>
                     </div>
                   </div>
                 </a>
@@ -261,6 +281,8 @@
                         Với phương pháp học Tiếng Anh theo cơ chế cảm xúc và phản xạ đa giác quan, đáp ứng nhu cầu vận động cao của trẻ em.Khóa học giúp tiếp
                         thu nhanh vượt trội, phát triển kỹ năng Tiếng Anh siêu tốc.
                                           </p>
+                                          <button type="submit" onclick="openNav2()"style="background-color:rgb(0,183,70)"><p style="color:rgb(255, 255, 255);  font-family: Arial, Helvetica, sans-serif;padding:3px;margin: 0;">Đăng ký ngay</p></button>
+
                     </div>
                   </div>
                 </a>
@@ -280,6 +302,8 @@
 
                         Khóa học luyện Tiếng Anh dành cho những người mong muốn nâng cao trình độ Tiếng Anh cấp tốc nhưng lại không có thời gian đến lớp học.
                       </p>
+                      <button type="submit" onclick="openNav2()"style="background-color:rgb(0,183,70)"><p style="color:rgb(255, 255, 255);  font-family: Arial, Helvetica, sans-serif;padding:3px;margin: 0;">Đăng ký ngay</p></button>
+
                     </div>
                   </div>
                 </a>
@@ -302,6 +326,8 @@
                         Hệ thống hỗ trợ các lớp học cho các doanh nghiệp với chất lượng được cam kết hiệu quả, chất lượng giảng dạy tốt nhất. Đem đến cho
                         doanh nghiệp giải pháp tối ưu để nâng cao trình độ cho nhân lực.
                                           </p>
+                                          <button type="submit" onclick="openNav2()"style="background-color:rgb(0,183,70)"><p style="color:rgb(255, 255, 255);  font-family: Arial, Helvetica, sans-serif;padding:3px;margin: 0;">Đăng ký ngay</p></button>
+
                     </div>
                   </div>
                 </a>
@@ -481,6 +507,20 @@ function openQMK() {
   document.getElementById("dangnhapfb").style.height = "35px";
   document.getElementById("dangnhapfb").style.display = "block";
 
+}
+function openNav4() {
+  document.getElementById("myNav4").style.width="100%"
+  document.getElementById("myNav4").style.height="33px"
+
+}
+
+function closeNav4() {
+  document.getElementById("myNav4").style.width = "0%";
+  document.getElementById("myNav4").style.height = "0%";
+}
+function turnon(){
+  var element=document.body;
+  element.classList.toggle("dark-mode")
 }
     </script>
     		<script type="text/javascript" src="assets/js/form.js"> </script>
